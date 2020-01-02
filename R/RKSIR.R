@@ -187,8 +187,8 @@ Jy <- function(y, numeric = TRUE, h = NULL)
 
 #' @title Ei
 #' @description Compute the eigensystem of RKSIR
-#' @param Kx kernel matrix
-#' @param J slice matrix
+#' @param Kx kernel matrix, better be the result of \code{\link{KX}}
+#' @param J slice matrix, better be the result of \code{\link{Jy}}
 #' @param s regularization parameter
 #' @return a eigen analysis result
 #' \item{ei}{the eigensystem of RKSIR}
@@ -216,7 +216,7 @@ Ei <- function(Kx, J, s)
 #' @param Xtrain training data
 #' @param Xsple if data is too large, can choose some sample of training data
 #' @param p dimensions of e.d.r. directions
-#' @param ei eigen analysis result of RKSIR
+#' @param ei eigen analysis result of \code{\link{Ei}}
 #' @param kernel kernel functions, "AG" means \code{\link{AGKernel}}, "G" means \code{\link{GKernel}}, "P" means \code{\link{PKernel}}
 #' @param sigma bandwidth
 #' @return a matrix with column vector being e.d.r. direction on the training set
@@ -250,7 +250,7 @@ Vtr <- function(Xtrain, Xsple = Xtrain, p, ei, kernel = "AG", sigma = 2)
 #' @param Xtrain training data
 #' @param Xsple if data is too large, can choose some sample of training data
 #' @param p dimensions of e.d.r. directions
-#' @param ei eigen analysis result of RKSIR
+#' @param ei eigen analysis result of \code{\link{Ei}}
 #' @param kernel kernel functions, "AG" means \code{\link{AGKernel}}, "G" means \code{\link{GKernel}}, "P" means \code{\link{PKernel}}
 #' @param sigma bandwidth
 #' @return a matrix with column vector being e.d.r. direction on the testing set

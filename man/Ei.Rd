@@ -7,9 +7,9 @@
 Ei(Kx, J, s)
 }
 \arguments{
-\item{Kx}{kernel matrix}
+\item{Kx}{kernel matrix, better be the result of \code{\link{KX}}}
 
-\item{J}{slice matrix}
+\item{J}{slice matrix, better be the result of \code{\link{Jy}}}
 
 \item{s}{regularization parameter}
 }

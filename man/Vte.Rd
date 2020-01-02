@@ -15,7 +15,7 @@ Vte(Xtest, Xtrain, Xsple, p, ei, kernel = "AG", sigma = 2)
 
 \item{p}{dimensions of e.d.r. directions}
 
-\item{ei}{eigen analysis result of RKSIR}
+\item{ei}{eigen analysis result of \code{\link{Ei}}}
 
 \item{kernel}{kernel functions, "AG" means \code{\link{AGKernel}}, "G" means \code{\link{GKernel}}, "P" means \code{\link{PKernel}}}
 

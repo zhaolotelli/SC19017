@@ -4,10 +4,11 @@ Title: SC19017 final report package for Statistical computing
 Version: 1.0
 Date: 2019-12-26
 Author: Yue Zhao
+Depends: R (>= 3.6.0)
 Maintainer: Yue Zhao <zhy99@mail.ustc.edu.cn>
 Description: Some useless R or Rcpp functions for 'Statistical computing' course. 
 License: GPL (>= 2)
-Imports: Rcpp (>= 0.12.16), microbenchmark, knitr, rmarkdown
+Imports: Rcpp (>= 0.12.16), microbenchmark, knitr, rmarkdown, ggplot2, e1071, class, rvest, xml2, corrplot, bootstrap, DAAG, boot, Ball, parallel
 LinkingTo: Rcpp
 RoxygenNote: 7.0.2
 Suggests: knitr, rmarkdown
